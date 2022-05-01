@@ -83,6 +83,7 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 
 article,
@@ -102,7 +103,8 @@ section {
 body {
     line-height: 1;
     font-size: 14px;
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    -webkit-font-smoothing: antialiased;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 ol,
@@ -145,30 +147,28 @@ img {
 }
 
 
-.contaner {
+.container {
     width: 1300px;
     margin: 0 auto;
 }
 
+.btn{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 4px;
+    background: #316aff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .header {
-    height: 60px;
     background-color: #141618;
 }
 
-/* .egghead {
-    font-size:1.25rem;
-    font-weight:600;
-    display: inline-block;
-    box-sizing: border-box;
-    border: 0 solid #e5e7eb;
-    color:#fff;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
-    line-height: 1.25rem;
-} */
-
-.header .contaner {
+.header .container {
     display: flex;
     align-items: center;
     height:60px;
@@ -180,8 +180,13 @@ img {
 
 .header .menu ul li a {
     color: rgba(255,255,255, .6);
-    line-height: 60px;
-    display: block;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.header .menu ul li a i{
+    margin-right: 10px;
 }
 
 .header .menu ul li a:hover {
@@ -193,7 +198,6 @@ img {
     border-radius: 4px;
     overflow: hidden;
     margin-left: auto;
-    margin-right: 15px;
 }
 
 .header .search input {
@@ -201,6 +205,7 @@ img {
     width: 250px;
     background-color: #21252d;
     padding:0 10px;
+    color: #fff;
 }
 
 .header .search input::placeholder {
@@ -229,9 +234,9 @@ img {
 }
 
 .header .login-buttons ul li a {
-    height: 34;
+    height: 34px;
     display: block;
-    line-height: 34;
+    line-height: 34px;
     color: rgba(255,255,255,0.8);
 }
 
@@ -243,4 +248,46 @@ img {
     background:#36855b;
     border-radius: 4px;
     padding: 0 15px;
+}
+
+
+/* **Banner Section */
+
+.banner {
+    background:linear-gradient(170deg,#212A39,#181E28);
+}
+
+.banner .container{
+    min-height:50vh;
+    display:flex;
+    padding: 70px 0;
+    align-items: center;
+}
+
+.banner .container .banner-box {
+    width:50%;
+}
+
+.banner .container .banner-box img {
+    max-width: 100%;
+}
+
+.banner .container .banner-box.banner-image {
+    padding-left: 150px;
+}
+
+.banner .container .banner-box h1{
+    font-size: 48px;
+    color: #fff;
+    line-height: 56px;
+}
+
+.banner .container .banner-box h2{
+    font-size: 24px;
+    color: #b0b6be;
+    margin-top: 10px;
+}
+
+.banner .container .banner-box .btn {
+    margin-top: 65px;
 }
