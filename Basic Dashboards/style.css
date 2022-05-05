@@ -528,7 +528,97 @@ body {
 }
 
 .content .rightbar {
-    width: 360px;
-    padding: 32px 0;
     border-left: 2px solid #f6f7fa;
+}
+
+.content .rightbar .bar {
+    padding-bottom: 6px;
+    border-bottom: 1px solid #f6f7fa;
+    display: flex;
+    align-items: center;
+    line-height: 16px;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.content .rightbar i {
+    width: 50px;
+    height: 30px;
+    padding: 15px;
+    padding-bottom: 6px;
+    justify-content: center;
+}
+
+.content .rightbar .bar.active {
+    padding: 5px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .rightbar .bar.active .bar-notification {
+    margin-left: 50px;
+    font-size: 20px;
+    color: #8186ad;
+    width: 50px;
+    padding: 15px;
+}
+
+.content .rightbar .bar.active .bar-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.content .rightbar .bar.active .bar-profile-name p {
+    font-size: 14px;
+    color: #0e1b42;
+    margin-left: 12px;
+}
+
+.content .rightbar .card {
+    margin: 30px;
+}
+
+.content .rightbar .bar.active .fa-chevron-down {
+    width: 50px;
+    height: 30px;
+    padding: 15px;
+    padding-bottom: 6px;
+    justify-content: center;
+    color: #8186ad;
+}
+
+.content .content-title h4 {
+    font-size: 20px;
+    color: #0e1b42;
+    font-weight: 500;
+    margin: 30px;
+}
+
+.content .rightbar .card .activities {
+    display: flex;
+    margin: 0 7px;
+    background-color: #f7f8fb;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content .rightbar .rightbar-dot {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .rightbar .activities i.fa-circle-dot {
+    color: #8186ad;
+}
+
+.content .rightbar .card .rigtbar-photo img {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
 }
