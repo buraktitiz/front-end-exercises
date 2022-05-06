@@ -531,25 +531,6 @@ body {
     border-left: 2px solid #f6f7fa;
 }
 
-.content .rightbar .bar {
-    padding-bottom: 6px;
-    border-bottom: 1px solid #f6f7fa;
-    display: flex;
-    align-items: center;
-    line-height: 16px;
-    justify-content: space-between;
-    position: relative;
-    margin-bottom: 18px;
-}
-
-.content .rightbar i {
-    width: 50px;
-    height: 30px;
-    padding: 15px;
-    padding-bottom: 6px;
-    justify-content: center;
-}
-
 .content .rightbar .bar.active {
     padding: 5px;
     line-height: 1;
@@ -561,9 +542,29 @@ body {
 .content .rightbar .bar.active .bar-notification {
     margin-left: 50px;
     font-size: 20px;
-    color: #8186ad;
+    color: #B1B4CE;
     width: 50px;
     padding: 15px;
+}
+
+
+.content .rightbar .bar {
+    padding-bottom: 6px;
+    border-bottom: 1px solid #f6f7fa;
+    display: flex;
+    align-items: center;
+    line-height: 16px;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.content .rightbar i {
+    width: 50px;
+    height: 30px;
+    padding: 15px;
+    padding-bottom: 6px;
+    justify-content: center;
 }
 
 .content .rightbar .bar.active .bar-profile img {
@@ -579,18 +580,89 @@ body {
     margin-left: 12px;
 }
 
-.content .rightbar .card {
-    margin: 30px;
-}
-
 .content .rightbar .bar.active .fa-chevron-down {
     width: 50px;
     height: 30px;
     padding: 15px;
     padding-bottom: 6px;
     justify-content: center;
-    color: #8186ad;
+    color: #B1B4CE;
 }
+
+.rightbar .activities-section .header {
+    margin: 10px;
+}
+
+.rightbar .activities-section .header h4 {
+    font-size: 20px;
+    color: #0e1b42;
+    font-weight: 500;
+    margin: 30px;
+}
+
+.rightbar .activities-section .activity-1 {
+    width: 260px;
+    height: 96px;
+}
+
+.rightbar .activities-section .activity-1 i {
+    color: #B1B4CE;
+    display:left;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+
+.rightbar .activities-section .activity-1 .content {
+    width: 228px;
+    height: 36px;
+    color: #8186AD;
+}
+
+.rightbar .activities-section .activity-1 .content .not-1 {
+    width: 188px;
+    font-size: 12px;
+    color: #0E1B42;
+}
+
+
+.rightbar .activities-section .activity-1 .content .not-2 {
+    width: auto;
+    height: 15px;
+    font-size: 11px;
+    color: #8186AD;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+.rightbar .activities-section .activity-1 .images {
+    width: 124px;
+    height: 44px;
+}
+
+.rightbar .activities-section .activity-1 .images img {
+    margin-left :60px;
+    border-radius: 6px;
+    display: flex;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.content .rightbar .card {
+    margin: 30px;
+}
+
+
 
 .content .content-title h4 {
     font-size: 20px;
@@ -621,4 +693,4 @@ body {
     width: 48px;
     height: 48px;
     border-radius: 4px;
-}
+} */
