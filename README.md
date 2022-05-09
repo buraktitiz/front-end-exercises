@@ -11,3 +11,6 @@
 ![Web Interface](https://github.com/buraktitiz/front-end-exercises/blob/main/Web%20Interface/img/egghead(3).png)
 ![Web Interface](https://github.com/buraktitiz/front-end-exercises/blob/main/Web%20Interface/img/egghead(4).png)
 
+# basic-Dashboards
+
+![Basic Dashboards](https://github.com/buraktitiz/front-end-exercises/blob/main/Basic%20Dashboards/img/Basic%20Dashboards.png)
