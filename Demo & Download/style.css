@@ -9,6 +9,55 @@
     font-family: 'Nunito', sans-serif;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     background: #0f0f1b;
+    display: grid;
+    place-items: center;
+}
+
+.component--pricing-list {
+    text-align: center;
+}
+
+.component--pricing-list header {
+    margin-bottom: 80px;
+}
+
+.component--pricing-list header h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.component--pricing-list header p {
+    margin: 0 auto;
+    font-size: 18px;
+    color: #fff;
+    line-height: 22px;
+    max-width: 460px;
+}
+
+.pricing-list {
+    display: flex;
+    margin: 0 -10px;
+}
+
+.pricing-list li {
+    width:265px;
+    margin:0 10px;
+}
+
+.pricing-list li a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 267px;
+    background-color: #171727;
+    border-radius: 20px;
 }
