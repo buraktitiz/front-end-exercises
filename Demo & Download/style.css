@@ -49,15 +49,55 @@ body {
 }
 
 .pricing-list li {
-    width:265px;
-    margin:0 10px;
+    width: 265px;
+    margin: 0 10px;
 }
 
 .pricing-list li a {
     display: flex;
+    padding: 35px;
     flex-direction: column;
     width: 100%;
     height: 267px;
     background-color: #171727;
     border-radius: 20px;
+    color: #fff;
+    text-align: left;
+    transition: 300ms background-color;
+
+}
+
+.pricing-list li a:hover {
+    background: #242486;
+}
+
+
+.pricing-list li a span.title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pricing-list li a span.domain-title {
+    margin-bottom: 35px;
+}
+
+
+.pricing-list li a span.price {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.pricing-list li a span.price span {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.pricing-list li a span.btn {
+    font-size: 16px;
+    margin-top: auto;
+    display: flex;
+    margin-left: 10px;
 }
