@@ -61,16 +61,38 @@ body {
                 border-radius: 20px;
                 color: #fff;
                 text-align: left;
+                transition: 300ms background-color;
+                position: relative;
+
+                .best-price {
+                    position: absolute;
+                    line-height: 30px;
+                    top: -15px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 30px;
+                    background-color: #a0e0b2;
+                    border-radius: 30px;
+                    font-size: 16px;
+                    color: #171727;
+                    padding: 0 18px;
+
+                }
 
                 .title {
                     font-size: 22px;
                     font-weight: bold;
                     margin-bottom: 20px;
+
+                    &.domain-title {
+                        margin-bottom: 35px;
+                    }
                 }
 
                 .price {
                     font-size: 26px;
                     font-weight: bold;
+                    line-height: 32px;
 
                     span {
                         display: block;
@@ -83,9 +105,37 @@ body {
                     font-size: 16px;
                     margin-top: auto;
                     display: flex;
+
                 }
+
+                &:hover {
+                    background: #242486;
+                }
+            }
+
+            &.active a {
+                background: #242486;
+            }
+        }
+    }
+
+    .action {
+        margin-top: 64px;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            padding: 18px 45px;
+            border-radius: 10px;
+            border: 2px solid #1f1f35;
+            transition: 300ms all;
+            font-size: 16px;
+            color: #8080b9;
+
+            &:hover {
+                border-color: #8080b9;
+                color: #fff;
             }
         }
     }
 }
-

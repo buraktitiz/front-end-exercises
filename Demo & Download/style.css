@@ -72,6 +72,24 @@ body {
   border-radius: 20px;
   color: #fff;
   text-align: left;
+  -webkit-transition: 300ms background-color;
+  transition: 300ms background-color;
+  position: relative;
+}
+
+.component--pricing-list .pricing-list li a .best-price {
+  position: absolute;
+  line-height: 30px;
+  top: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 30px;
+  background-color: #a0e0b2;
+  border-radius: 30px;
+  font-size: 16px;
+  color: #171727;
+  padding: 0 18px;
 }
 
 .component--pricing-list .pricing-list li a .title {
@@ -80,9 +98,14 @@ body {
   margin-bottom: 20px;
 }
 
+.component--pricing-list .pricing-list li a .title.domain-title {
+  margin-bottom: 35px;
+}
+
 .component--pricing-list .pricing-list li a .price {
   font-size: 26px;
   font-weight: bold;
+  line-height: 32px;
 }
 
 .component--pricing-list .pricing-list li a .price span {
@@ -97,5 +120,34 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.component--pricing-list .pricing-list li a:hover {
+  background: #242486;
+}
+
+.component--pricing-list .pricing-list li.active a {
+  background: #242486;
+}
+
+.component--pricing-list .action {
+  margin-top: 64px;
+  text-align: center;
+}
+
+.component--pricing-list .action a {
+  display: inline-block;
+  padding: 18px 45px;
+  border-radius: 10px;
+  border: 2px solid #1f1f35;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+  font-size: 16px;
+  color: #8080b9;
+}
+
+.component--pricing-list .action a:hover {
+  border-color: #8080b9;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
